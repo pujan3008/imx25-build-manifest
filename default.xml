@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <default sync-j="4" revision="master"/>
+
+  <remote name="yocto" fetch="https://git.yoctoproject.org"/>
+  <remote name="freescale" fetch="https://github.com/Freescale"/>
+  <remote name="openembedded" fetch="https://github.com/openembedded"/>
+  <remote name="pujan" fetch="https://github.com/pujan3008"/>
+
+  <project name="poky" 
+           remote="yocto"
+           path="sources/poky"
+           revision="master"/>
+
+  <project name="meta-freescale"
+           remote="freescale"
+           path="sources/meta-freescale"
+           revision="master"/>
+
+  <project name="meta-freescale-distro"
+           remote="freescale"
+           path="sources/meta-freescale-distro"
+           revision="master"/>
+
+  <project name="meta-openembedded"
+           remote="openembedded"
+           path="sources/meta-openembedded"
+           revision="master"/>
+
+  <project name="i.MX25pdk-Custom-Layer-.git"
+           remote="pujan"
+           path="sources/meta-ei-imx25"
+           revision="master"/>
+
+</manifest>
